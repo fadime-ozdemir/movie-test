@@ -1,0 +1,49 @@
+// Light Theme Variables
+$light-background: #ffffff;
+$light-text: #000000;
+$light-link: #28712e;
+
+// Dark Theme Variables
+$dark-background: #121212;
+$dark-text: #ffffff;
+$dark-link: #1effd6;
+
+// Shared styles
+$font-family: 'Arial', sans-serif;
+
+:root {
+    // Light Mode Colors
+    --bg-color-light: #fff;
+    --card-bg-light: #fff;
+    --card-title-light: #333;
+    --card-button-light: #00796b;
+    --card-button-hover-light: #004d40;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+    // Dark Mode Colors
+    --bg-color-dark: #121212;
+    --card-bg-dark: #1e1e1e;
+    --card-title-dark: #e0e0e0;
+    --card-button-dark: #4caf50;
+    --card-button-hover-dark: #388e3c;
+    --shadow-dark: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+  
+  [data-theme='dark'] {
+    --bg-color: var(--bg-color-dark);
+    --card-bg: var(--card-bg-dark);
+    --card-title: var(--card-title-dark);
+    --card-button: var(--card-button-dark);
+    --card-button-hover: var(--card-button-hover-dark);
+    --shadow: var(--shadow-dark);
+  }
+  
+  [data-theme='light'] {
+    --bg-color: var(--bg-color-light);
+    --card-bg: var(--card-bg-light);
+    --card-title: var(--card-title-light);
+    --card-button: var(--card-button-light);
+    --card-button-hover: var(--card-button-hover-light);
+    --shadow: var(--shadow-light);
+  }
+  
